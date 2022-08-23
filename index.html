@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ParticleJS</title>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-image: url(s.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+		}
+		header{
+			height: 100vh;
+			width: 100vw;
+			overflow: hidden;
+		}
+
+		ul{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100px;
+			background-color: transparent;
+            border: 10px;
+		}
+
+		ul li{
+			margin: 0 1rem;
+			color: rgb(21, 20, 20);
+			padding: 1rem 1.5rem;
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 700;
+			list-style: none;
+			font-family: sans-serif;
+			cursor: pointer;
+			letter-spacing: 1px;
+			transition: all .3s linear;
+            border: 10px;
+		}
+
+		ul li:nth-child(1){
+			background-color: #381a38;
+			color: white;
+		}
+
+		ul li:hover{
+			color: white;
+			background-color: #0ef970;
+		}
+
+		img{
+			position: absolute;
+			top: 15%;
+			right: 10rem;
+			width: 350px;
+			height: 100%;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li>Home</li>
+			<li>Service</li>
+			<li>Products</li>
+			<li>Our Team</li>
+			<li>Contact Us</li>
+		</ul>
+		<div id="particles-js"></div>		
+	</header>
+
+	<script src="Particles.js"></script>
+	<script src="app.js"></script>
+
+	
+</body>
+</html>
